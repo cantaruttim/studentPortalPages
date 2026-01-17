@@ -3,14 +3,14 @@ import { faEye } from '@fortawesome/free-regular-svg-icons'
 
 import { useState } from "react";
 
-export default function FormLogin() {
+export default function FormLogin({action}) {
     const [username, setUsername] = useState("");
     const [user_password, setUserpassword] = useState("");
 
     const [showPassword, setShowPassword] = useState(false);
 
     return (
-        <form className="grid gap-y-6">
+        <form className="grid gap-y-6" action={action}>
 
             <fieldset className="grid">
                 <label className="text-[#233059] font-semibold" htmlFor="username">Usuário</label>
@@ -77,9 +77,9 @@ export default function FormLogin() {
                         onClick={() => setShowPassword((show) => !show)}
                     >
                         <FontAwesomeIcon
-                        icon={faEye}
-                        size="2xs"
-                        style={{ color: "#233059" }}
+                            icon={faEye}
+                            size="2xs"
+                            style={{ color: "#233059" }}
                         />
                    
                     </button>
