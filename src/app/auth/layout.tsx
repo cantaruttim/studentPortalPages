@@ -15,5 +15,6 @@ export default function PublicLayout({
     >
         {children}
     </main>
+
   );
 }
