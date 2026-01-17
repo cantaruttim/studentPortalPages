@@ -6,39 +6,59 @@ export default function PrivateLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <nav className="bg-[#E5611C] px-8">
-        <div className="flex h-16 items-center gap-12">
-          
-          <div className="flex items-center">
-            <span className="text-xl font-bold text-[#233059]">
-              ADAI<span className="font-light italic text-white">College</span>
-            </span>
+
+    <html lang="pt-BR">
+
+      <body className="min-h-screen flex flex-col antialiased">
+        
+        <nav className="bg-[#E5611C] px-8">
+          <div className="flex h-16 items-center gap-12">
+            
+            <div className="flex items-center">
+              <span className="text-xl font-bold text-[#233059]">
+                ADAI<span className="font-light italic text-white">College</span>
+              </span>
+            </div>
+
+            <ul
+              className="
+                flex items-center gap-8
+                text-sm font-medium text-white
+
+                [&_a]:cursor-pointer
+                [&_a]:font-semibold
+                [&_a:hover]:text-[#233059]
+                [&_a:hover]:font-bold
+              "
+            >
+              <li><Link href="/activities">Atividades</Link></li>
+              <li><Link href="/modules">Módulos</Link></li>
+              <li><Link href="/teachers">Professores</Link></li>
+              <li><Link href="/grades">Boletim</Link></li>
+            </ul>
+
           </div>
+        </nav>
 
-          <ul
-            className="
-              flex items-center gap-8
-              text-sm font-medium text-white
+        <main className="flex-1 px-8 py-6">
+          {children}
+        </main>
 
-              [&_a]:cursor-pointer
-              [&_a]:font-semibold
-              [&_a:hover]:text-[#233059]
-              [&_a:hover]:font-bold
-            "
-          >
-            <li><Link href="/activities">Atividades</Link></li>
-            <li><Link href="/modules">Módulos</Link></li>
-            <li><Link href="/teachers">Professores</Link></li>
-            <li><Link href="/grades">Boletim</Link></li>
-          </ul>
-
+        <div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus vero modi, atque obcaecati animi eligendi reprehenderit numquam perferendis, cupiditate hic quisquam voluptates consequatur et voluptatibus natus dolore tempora nobis ipsa.</p>
         </div>
-      </nav>
 
-      <main className="px-8 py-6">
-        {children}
-      </main>
-    </>
+        <footer 
+          className="bg-white text-center text-sm text-gray-600 py-[100vh]">
+            © Copyright ADAI College. — Todos os direitos reservados. Desenvolvido por 
+              <Link 
+                href="https://www.linkedin.com/in/matheusalmeidacantarutti/" 
+                className="cursor-pointer underline text-blue">
+                  <i>Matheus Cantarutti</i>
+              </Link>.
+        </footer>
+      </body>
+    </html>
+
   );
 }
