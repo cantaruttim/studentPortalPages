@@ -35,6 +35,7 @@ export default function PrivateLayout({
               <li><Link href="/modules">Módulos</Link></li>
               <li><Link href="/teachers">Professores</Link></li>
               <li><Link href="/grades">Boletim</Link></li>
+              <li><Link href="/new-student">Novo Aluno</Link></li>
             </ul>
 
           </div>
