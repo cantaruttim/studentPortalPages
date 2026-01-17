@@ -10,14 +10,12 @@ export default function PrivateLayout({
       <nav className="bg-[#E5611C] px-8">
         <div className="flex h-16 items-center gap-12">
           
-          {/* LOGO */}
           <div className="flex items-center">
             <span className="text-xl font-bold text-[#233059]">
               ADAI<span className="font-light italic text-white">College</span>
             </span>
           </div>
 
-          {/* MENU */}
           <ul
             className="
               flex items-center gap-8
