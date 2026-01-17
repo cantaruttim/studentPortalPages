@@ -45,7 +45,7 @@ export default function PrivateLayout({
           {children}
         </main>
 
-        <footer className="mt-auto bg-white text-center text-sm text-gray-600 py-[100vh]">
+        <footer className="mt-auto bg-white text-center text-sm text-gray-600 py-[15vh]">
           © Copyright ADAI College. — Todos os direitos reservados. Desenvolvido por{" "}
           <Link
             href="https://www.linkedin.com/in/matheusalmeidacantarutti/"
