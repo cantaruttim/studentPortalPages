@@ -5,8 +5,15 @@ export default function PublicLayout({
 }) {
   return (
     <main 
-        className="min-h-screen flex items-center justify-center bg-gray-100">
-          {children}
+        className="
+          min-h-screen 
+          flex 
+          items-center 
+          justify-center 
+          bg-gradient-to-r from-[#E5611C] to-[#233059]
+        "
+    >
+        {children}
     </main>
   );
 }
