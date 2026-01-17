@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye } from '@fortawesome/free-regular-svg-icons'
+
 import { useState } from "react";
 
 export default function FormLogin() {
@@ -33,7 +36,13 @@ export default function FormLogin() {
             </fieldset>
 
             <fieldset className="grid">
-                <label className="text-[#233059] font-semibold" htmlFor="user_password">Senha</label>
+                <label className="
+                    text-[#233059] 
+                    font-semibold" 
+                    htmlFor="user_password"
+                >
+                        Senha
+                </label>
 
                 <div className="relative flex items-center">
                     <input 
@@ -67,9 +76,13 @@ export default function FormLogin() {
                         type="button" 
                         onClick={() => setShowPassword((show) => !show)}
                     >
-                        ---
+                        <FontAwesomeIcon
+                        icon={faEye}
+                        size="2xs"
+                        style={{ color: "#233059" }}
+                        />
+                   
                     </button>
-
                 </div>
 
             </fieldset>
