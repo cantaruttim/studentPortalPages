@@ -44,18 +44,21 @@ export default function PrivateLayout({
           {children}
         </main>
 
-        <div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus vero modi, atque obcaecati animi eligendi reprehenderit numquam perferendis, cupiditate hic quisquam voluptates consequatur et voluptatibus natus dolore tempora nobis ipsa.</p>
-        </div>
-
-        <footer 
-          className="bg-white text-center text-sm text-gray-600 py-[100vh]">
-            © Copyright ADAI College. — Todos os direitos reservados. Desenvolvido por 
-              <Link 
-                href="https://www.linkedin.com/in/matheusalmeidacantarutti/" 
-                className="cursor-pointer underline text-blue">
-                  <i>Matheus Cantarutti</i>
-              </Link>.
+        <footer className="mt-auto bg-white text-center text-sm text-gray-600 py-[100vh]">
+          © Copyright ADAI College. — Todos os direitos reservados. Desenvolvido por{" "}
+          <Link
+            href="https://www.linkedin.com/in/matheusalmeidacantarutti/"
+            target="_blank"
+            className="
+              font-semibold
+              cursor-pointer
+              transition-colors
+              hover:text-[#233059]
+            "
+          >
+            Matheus Cantarutti
+          </Link>
+          .
         </footer>
       </body>
     </html>
