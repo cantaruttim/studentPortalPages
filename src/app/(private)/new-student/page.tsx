@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import FormCreateStudent from "../components/FormCreateStudent";
 
 export default function NewStudent() {
@@ -29,6 +30,25 @@ export default function NewStudent() {
           <FormCreateStudent />
       
       </div>
+
+      <br />
+
+      <footer className="mt-auto mb-auto bg-white text-center text-sm text-gray-600 py-1">
+          © Copyright ADAI College. — Todos os direitos reservados. Desenvolvido por{" "}
+          <Link
+            href="https://www.linkedin.com/in/matheusalmeidacantarutti/"
+            target="_blank"
+            className="
+              font-semibold
+              cursor-pointer
+              transition-colors
+              hover:text-[#233059]
+            "
+          >
+            Matheus Cantarutti
+          </Link>
+          .
+        </footer>
 
     </>
 

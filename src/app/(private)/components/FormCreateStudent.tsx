@@ -2,6 +2,7 @@
 import { useState } from "react";
 
 export default function FormCreateStudent() {
+    
     const [firstName, setFirstName] = useState("");
     const [familyName, setFamilyName] = useState("");
     const [email, setEmail] = useState("");
@@ -12,7 +13,13 @@ export default function FormCreateStudent() {
         <form className="grid gap-y-6" >
 
             <fieldset className="grid">
-                <label className="text-[#233059] font-semibold" htmlFor="firstName">Primeiro Nome</label>
+                <label className="
+                    text-[#233059] 
+                    font-semibold" 
+                    htmlFor="firstName"
+                >
+                    Primeiro Nome
+                </label>
                 <input 
                     className="
                         px-2 
