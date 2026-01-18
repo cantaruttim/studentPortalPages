@@ -3,14 +3,14 @@ import { faEye } from '@fortawesome/free-regular-svg-icons'
 
 import { useState } from "react";
 
-export default function FormLogin({action}) {
+export default function FormLogin() {
     const [username, setUsername] = useState("");
     const [user_password, setUserpassword] = useState("");
 
     const [showPassword, setShowPassword] = useState(false);
 
     return (
-        <form className="grid gap-y-6" action={action}>
+        <form className="grid gap-y-6">
 
             <fieldset className="grid">
                 <label className="text-[#233059] font-semibold" htmlFor="username">Usuário</label>
