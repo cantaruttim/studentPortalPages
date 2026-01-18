@@ -30,7 +30,7 @@ export default function Login() {
           min-w-100 
           bg-[#fdfcfc] rounded-3xl shadow-xl
         ">
-        <FormLogin action={handleLogin}/>
+        <FormLogin />
 
       </div>
     </>
